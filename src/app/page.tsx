@@ -1,113 +1,125 @@
-import Image from 'next/image'
+"use client";
+import Image from 'next/image'; 
+import me from "./me2.png";
+import Header from "@/components/Header";
+import Link from "next/link";
+import {TbBrandCSharp, TbBrandNextjs, TbBrandPhp, TbBrandHtml5, TbBrandCss3, TbBrandTailwind , TbBrandFigma} from "react-icons/tb";
+import {SiJavascript, SiAsana} from "react-icons/si";
+import { FaJava, FaBootstrap, FaConfluence, FaJira } from "react-icons/fa6";
+
+
+
+import {
+  SiAdobe,
+  SiEbay,
+  SiHashnode,
+  SiHonda,
+  SiLoom,
+  SiMeta,
+  SiTailwindcss,
+  SiThewashingtonpost,
+  SiUnderarmour,
+  SiZapier,
+} from "react-icons/si";
+import { GrReactjs } from "react-icons/gr";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main>
+    <div className="up absolute z-10 lg:-top-48 md:-top-24 -top-10" />
+    <div className="w-full h-full  max-w-5xl mx-auto relative z-20 ">
+      <Header />
+      <div className="mt-40 px-2 flex items-center justify-center">
+          <Image
+          className='me-container'
+           alt="Koray Vatan"
+          src={me}
+          />
+        </div>
+      <div className="mt-10 px-5">
+     
+        <h1 className="text-6xl text-center font-InterMedium  text-white bg-gradient-to-r from-[#e0dfdf]  to-black  text-transparent bg-clip-text capitalize">
+          Computer Engineering Student who is an{" "}
+          <span className=" font-bold tracking-tighter  bg-gradient-to-r from-[#fffb13] to-yellow-500 text-transparent bg-clip-text text-6xl font-InterBold">
+            Entrepreneur{" "}
+          </span>
+        </h1>
+        <p className="text-neutral-400 max-w-[41rem] mx-auto mt-4  font-InterRegular text-center">
+          Koray Vatan,
+          <br/> Business oriented Full-Stack Developer,  
+         and has knowledge with UI&UX. <br/>
+         Failed a start-up before and developing another one in these days..
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+        <div className="flex justify-center mt-11">
+          <div>
+            {
+              <Link href="/posts">
+                <button
+                  className="px-4 bg-transparent
+                  border-neutral-800 border  font-InterRegular
+                rounded-full h-8
+                text-xl text-neutral-400
+                dark:border-slate-600"
+                >
+                  Hire me!
+                </button>
+              </Link>
+            }
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto flex justify-center gap-x-8 mt-10">
+          <SiJavascript className="text-neutral-400 text-4xl" />
+          <FaJava className="text-neutral-400 text-4xl" />
+          <TbBrandCSharp  className="text-neutral-400 text-4xl" />
+          <TbBrandPhp  className="text-neutral-400 text-4xl" />
+          <TbBrandNextjs className="text-neutral-400 text-4xl" />
+          <GrReactjs className="text-neutral-400 text-4xl" />
+          <TbBrandHtml5  className="text-neutral-400 text-4xl" />
+          <TbBrandCss3  className="text-neutral-400 text-4xl" />
+          <FaBootstrap  className="text-neutral-400 text-4xl" />
+          <TbBrandTailwind  className="text-neutral-400 text-4xl" />
+          <TbBrandFigma className="text-neutral-400 text-4xl" />
+          <FaJira  className="text-neutral-400 text-4xl" />
+          <SiAsana className="text-neutral-400 text-4xl" />
+          <FaConfluence  className="text-neutral-400 text-4xl" />
+          
+
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mt-20">
+        <h1 className="font-InterRegular uppercase tracking-tighter  bg-gradient-to-b from-[#e0dfdf]  to-black  text-transparent bg-clip-text text-center  ">
+          Trusted by the best front end teams
+        </h1>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="max-w-4xl mx-auto flex flex-col items-center mt-5 gap-y-10">
+        <div className="flex gap-x-20">
+          <SiAdobe className="text-neutral-400 text-xl" />
+          <SiUnderarmour className="text-neutral-400 text-xl" />
+          <SiEbay className="text-neutral-400 text-xl" />
+          <SiZapier className="text-neutral-400 text-xl" />
+          <SiLoom className="text-neutral-400 text-xl" />
+        </div>
+        <div className="flex gap-x-20">
+          <SiHashnode className="text-neutral-400 text-xl" />
+          <SiTailwindcss className="text-neutral-400 text-xl" />
+          <SiThewashingtonpost className="text-neutral-400 text-xl" />
+          <SiHonda className="text-neutral-400 text-xl" />
+          <SiMeta className="text-neutral-400 text-xl" />
+        </div>
       </div>
-    </main>
-  )
+
+      {/* <Link href="/posts">
+        <div className="py-2 px-8 mt-14 text-lg w-fit transition-colors duration-200 text-white bg-slate-800 border rounded-full shadow-md border-[#D1D5DA] hover:bg-slate-700 flex items-center">
+          Go to Blogs <BsArrowRightShort className="text-3xl ml-1" />
+        </div>
+      </Link> */}
+      {/* <Footer /> */}
+    </div>
+  </main>
+  );
 }
