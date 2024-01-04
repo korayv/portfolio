@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image'; 
-import me from "./me2.png";
+import me from "./images/me2.png";
 import Header from "@/components/Header";
 import Link from "next/link";
 import {TbBrandCSharp, TbBrandNextjs, TbBrandPhp, TbBrandHtml5, TbBrandCss3, TbBrandTailwind , TbBrandFigma} from "react-icons/tb";

@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
+import { isNull } from "util";
 
 function Header() {
   return (
@@ -34,52 +35,71 @@ const transition = {
 export const Navbar = () => {
   const [active, setActive] = useState(null);
   return (
-    <div className="   relative z-40  ">
+    <div className="relative z-40">
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm ">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/me">About Me</HoveredLink>
+            <HoveredLink href="/design">Design</HoveredLink>
+            <HoveredLink href="/team-management">Managing a team</HoveredLink>
+            <HoveredLink href="/my-xp">Work Experience</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+        <MenuItem setActive={setActive} active={active} item="Projects">
+          <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="JoScript"
-              href="#"
-              src="/images/img1.jpg"
+              title="Medicurism"
+              href="/medicurism"
+              src="/images/me.png"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
-              title="My git"
-              href="https://https://github.com/Joscriptt"
-              src="/images/img2.jpg"
+              title="Kario"
+              href="/kario"
+              src="me.png"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="JoScript git"
-              href="https://github.com/Joscriptt"
-              src="/images/img3.jpg"
+              title="Raspberrify"
+              href="/raspberrify"
+              src="images/me.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
-              title="Twitter"
+              title="Fabrikator"
+              href="fabrikator.io"
+              src="/images/me.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="FactoryFuse"
+              href="/ffuse"
+              src="images/me.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Go-Project"
+              href="/gift-project"
+              src="/images/me.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Grinder App"
               href="https://github.com/Joscriptt"
-              src="/images/img4.jpg"
+              src="images/me.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Medicurism App"
+              href="https://github.com/Joscriptt"
+              src="images/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
+        <MenuItem setActive={setActive} active={isNull} item="Blog">  {/*Blog linki boş*/}
         </MenuItem>
+
       </Menu>
     </div>
   );
