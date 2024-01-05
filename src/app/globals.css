@@ -164,3 +164,9 @@ article img {
   height: 560px; 
   border-radius: 50%;
 }
+.me-coffee{
+  background-image: url(/images/mecoffee.jpg); 
+  width: 50%;
+  height: 50%; 
+  border-radius: 10px;
+}

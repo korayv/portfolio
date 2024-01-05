@@ -85,13 +85,13 @@ export const Navbar = () => {
             />
             <ProductItem
               title="Grinder App"
-              href="https://github.com/Joscriptt"
+              href="https://github.com/korayv/grinder"
               src="images/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Medicurism App"
-              href="https://github.com/Joscriptt"
+              href="/medicurism-app"
               src="images/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
