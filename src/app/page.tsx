@@ -31,7 +31,7 @@ export default function Home() {
     <div className="up absolute z-10 lg:-top-48 md:-top-24 -top-10" />
     <div className="w-full h-full  max-w-5xl mx-auto relative z-20 ">
       <Header />
-      <div className="mt-40 px-2 flex items-center justify-center">
+      <div className="mt-20 px-2 flex items-center justify-center">
           <Image
           className='me-container'
            alt="Koray Vatan"
@@ -46,7 +46,7 @@ export default function Home() {
             Entrepreneur{" "}
           </span>
         </h1>
-        <p className="text-neutral-400 max-w-[41rem] mx-auto mt-4  font-InterRegular text-center">
+        <p className="text-2xl text-neutral-400 max-w-[81rem] mx-auto mt-4  font-InterRegular text-center">
           Koray Vatan,
           <br/> Business oriented Full-Stack Developer,  
          and has knowledge with UI&UX. <br/>
