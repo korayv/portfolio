@@ -4,12 +4,8 @@ import me from "./images/me2.png";
 import mecoffee from "./images/mecoffee.jpg";
 import Header from "@/components/Header";
 import Link from "next/link";
-import {TbBrandCSharp, TbBrandNextjs, TbBrandPhp, TbBrandHtml5, TbBrandCss3, TbBrandTailwind , TbBrandFigma} from "react-icons/tb";
-import {SiJavascript, SiAsana} from "react-icons/si";
-import { FaJava, FaBootstrap, FaConfluence, FaJira } from "react-icons/fa6";
 
-
-
+import Footer from "@/components/Footer";
 import {
   SiAdobe,
   SiEbay,
@@ -23,31 +19,29 @@ import {
   SiZapier,
 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
-import Footer from "@/components/Footer";
+import {TbBrandCSharp, TbBrandNextjs, TbBrandPhp, TbBrandHtml5, TbBrandCss3, TbBrandTailwind , TbBrandFigma} from "react-icons/tb";
+import {SiJavascript, SiAsana} from "react-icons/si";
+import { FaJava, FaBootstrap, FaConfluence, FaJira } from "react-icons/fa6";
+
+
 
 export default function Home() {
   return (
-    <main>
+  <main>
     <div className="up absolute z-10 lg:-top-48 md:-top-24 -top-10" />
     <div className="w-full h-full  max-w-5xl mx-auto relative z-20 ">
       <Header />
-      <div className="mt-20 px-2 flex items-center justify-center">
-          <Image
-          className='me-container'
-           alt="Koray Vatan"
-          src={me}
-          />
-        </div>
-      <div className="mt-10 px-5">
+   
+      <div className="mt-40 px-5">
      
-        <h1 className="text-6xl text-center font-InterMedium  text-white bg-gradient-to-r from-[#e0dfdf]  to-black  text-transparent bg-clip-text capitalize">
-          Computer Engineering Student who is an{" "}
-          <span className=" font-bold tracking-tighter  bg-gradient-to-r from-[#fffb13] to-yellow-500 text-transparent bg-clip-text text-6xl font-InterBold">
-            Entrepreneur{" "}
+        <h1 className="text-l text-center font-InterMedium  text-white bg-gradient-to-r from-[#e0dfdf]  to-black  text-transparent bg-clip-text ">
+          Hello, My name is <br/>{" "}
+          <span className="mt-5 font-bold tracking-tighter  bg-gradient-to-r from-[#fffb13] to-yellow-500 text-transparent bg-clip-text text-6xl font-InterBold">
+            Koray Vatan{" "}
           </span>
         </h1>
-        <p className="text-2xl text-neutral-400 max-w-[81rem] mx-auto mt-4  font-InterRegular text-center">
-          Koray Vatan,
+        <p className="text-xl text-neutral-400 max-w-[81rem] mx-auto mt-10 font-InterRegular text-center">
+            Nice to meet you! You better know me:
           <br/> Business oriented Full-Stack Developer,  
          and has knowledge with UI&UX. <br/>
          Failed a start-up before and developing another one in these days..
@@ -66,7 +60,22 @@ export default function Home() {
      
           </div>
         </div>
-
+        {/*About me */}
+        <div className="mt-80 grid grid-cols-2 px-2 ">
+          <div className='text-white text-center'>
+            <h2 className={'text-center text-2xl font-semibold text-white'}>About me</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, est?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et dolore laboriosam, animi quo voluptatum itaque repellendus assumenda tenetur. Inventore.
+          </div>
+          <div className='align-center'>
+            <Image
+            className='me-container'
+            alt="Koray Vatan"
+            src={me}
+            />
+          </div>
+          
+        </div>
         <h2 className={'mt-40 mb-3 text-center text-2xl font-semibold text-white'}>The languages and tools I use:</h2>
 
         <div className="mt-10 max-w-4xl mx-auto flex justify-center gap-x-8">
@@ -86,7 +95,70 @@ export default function Home() {
           <FaConfluence  className="text-neutral-400 text-4xl" />
         </div>
       </div>
+      {/*Where I worked section*/}
+     <div className='mt-5 grid-cols-2 text-left text-white'>
+     <div>
+       <h2 className={'mt-20 mb-3 text-center text-2xl font-semibold text-white'}>Where I worked</h2>
+       <div className="mt-5 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left text-white">
+       <a
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={'mb-3 text-2xl font-semibold text-white'}>
+              Medicurism{' '}
+              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className={'m-0 max-w-[30ch] text-sm opacity-50 text-white'}>
+              A medical treatment start-up that built for health tourism in Turkiye.
+            </p>
+          </a>
+          <a
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={'mb-3 text-2xl font-semibold text-white'}>
+              Netsim Software Inc.{' '}
+              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className={'m-0 max-w-[30ch] text-sm opacity-50 text-white' }>
+              Curious people's dating application
+            </p>
+          </a>
+          <a
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={'mb-3 text-2xl font-semibold text-white'}>
+              Raspberrify{' '}
+              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className={'m-0 max-w-[30ch] text-sm opacity-50 text-white' }>
+            A startup-driven web development company, catering to startups through freelance projects.
+            </p>
+          </a>
+      </div>
 
+      
+
+      </div>
+
+     </div>
+    
+
+            
+            
       {/*The linking to my projects I have done so far*/}
       <h2 className={'mt-20 mb-3 text-center text-2xl font-semibold text-white'}>Start-ups:</h2>
       <div className="mt-5 mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left text-white">

@@ -160,8 +160,8 @@ article img {
 
 .me-container{
   background-image: url(/images/me2.png); 
-  width: 560px;
-  height: 560px; 
+  width: 360px;
+  height: 360px; 
   border-radius: 50%;
 }
 .me-coffee{
