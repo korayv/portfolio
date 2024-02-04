@@ -170,3 +170,7 @@ article img {
   height: 50%; 
   border-radius: 10px;
 }
+.me-btk{
+    background-image: url(/images/btk.jpeg); 
+    border-radius: 10px;
+  }
