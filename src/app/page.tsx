@@ -31,7 +31,7 @@ import {
 } from "react-icons/tb";
 import { SiJavascript, SiAsana } from "react-icons/si";
 import { FaJava, FaBootstrap, FaConfluence, FaJira } from "react-icons/fa6";
-
+import 'domchanger' 
 export default function Home() {
   return (
     <main>
@@ -158,11 +158,11 @@ export default function Home() {
           Where I worked
         </h2>
         <div className="grid grid-cols-5">
-          <div className="col-span-2  text-white">
+          <div id="xp-container" className="col-span-2  text-white">
             <div mt-5 text-left>
               <div className="mt-5 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left text-white">
                 <a
-                  href=""
+                  id="xp-medicurism"
                   className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -181,7 +181,7 @@ export default function Home() {
                   </p>
                 </a>
                 <a
-                  href=""
+                  id="xp-netsim"
                   className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -195,11 +195,11 @@ export default function Home() {
                   <p
                     className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}
                   >
-                    Curious people's dating application
+                    A company that builts ERP products for desktop.
                   </p>
                 </a>
                 <a
-                  href=""
+                  id="xp-rasp"
                   className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -221,17 +221,19 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-20 col-span-3  text-center text-white">
-            <h2 className="font-bold">Co-founder and Product Manager
-              <span className="text-mono">
-                @Medicurism
+            <h2 className="font-bold">Co-founder and Product Manager 
+              <span className="text-xl font-semibold font-mono">
+              {" "}@Medicurism
                 </span>
             </h2>
             <p className="mt-2 px-10">
+              
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam suscipit velit, ut magnam repudiandae fugit voluptate tempora aspernatur! Unde quia culpa repudiandae, recusandae vitae minus debitis, ratione suscipit nesciunt dignissimos ea placeat earum cumque maxime perspiciatis rem? Tempore, placeat quia?
             </p>
-            
+                        
           </div>
         </div>
+
 
         {/*The linking to my projects I have done so far*/}
 
