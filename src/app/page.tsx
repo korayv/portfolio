@@ -5,6 +5,8 @@ import btk from "./images/btk.jpeg";
 import mecoffee from "./images/mecoffee.jpg";
 import Header from "@/components/Header";
 import Link from "next/link";
+import ExperiencePage from './experiencePage';
+import Projects from './projects';
 
 import Footer from "@/components/Footer";
 import {
@@ -31,7 +33,8 @@ import {
 } from "react-icons/tb";
 import { SiJavascript, SiAsana } from "react-icons/si";
 import { FaJava, FaBootstrap, FaConfluence, FaJira } from "react-icons/fa6";
-import 'domchanger' 
+
+
 export default function Home() {
   return (
     <main>
@@ -76,15 +79,15 @@ export default function Home() {
           <div className="grid grid-cols-12 px-2 ">
             <div className="col-span-5 text-white text-center">
               <p className={"mt-10 text-s font-medium"}>
-                Hey there! I'm Koray Vatan, a junior software engineer with a
+                Hey there! I`m Koray Vatan, a junior software engineer with a
                 keen interest in solving everyday problems. With over 3 years in
-                the software world, I've taken the responsibility of three
+                the software world, I`ve taken the responsibility of three
                 mobile applications, numerous websites, and aced pitches that
                 would make even the most seasoned entrepreneurs nod in approval.
-                I'm a soft-skilled developer who dances through the digital
+                I`m a soft-skilled developer who dances through the digital
                 landscape using Agile Methodologies. My track record is a
                 symphony of successes in leadership and competence development
-                projects. I've donned multiple hats in start-ups, participating
+                projects. I`ve donned multiple hats in start-ups, participating
                 into a UI&UX design team during my internship in Belgium.
               </p>
               <div className={"text-s italic"}>
@@ -110,11 +113,11 @@ export default function Home() {
               </div>
               <br />
               <p className={"text-center text-s font-medium text-white"}>
-                But hey, I'm not all about codes and pixels. You also hear me
-                while talking snooker [watched live Judd Trump's 147], sculpting
+                But hey, I`m not all about codes and pixels. You also hear me
+                while talking snooker [watched live Judd Trump`s 147], sculpting
                 busts, and getting lost in the world of car designs. With a mind
                 that thrives on creativity, a passion for quality, and a dash of
-                tactful and diplomatic flair. Let's create something
+                tactful and diplomatic flair. Let`s create something
                 extraordinary together! 💻🚀
               </p>
             </div>
@@ -150,204 +153,12 @@ export default function Home() {
 
         {/*Where I worked section*/}
 
-        <h2
-          className={
-            "mt-20 mb-3 text-center text-2xl font-semibold text-yellow-500"
-          }
-        >
-          Where I worked
-        </h2>
-        <div className="grid grid-cols-5">
-          <div id="xp-container" className="col-span-2  text-white">
-            <div mt-5 text-left>
-              <div className="mt-5 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left text-white">
-                <a
-                  id="xp-medicurism"
-                  className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-                    Medicurism{" "}
-                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                      -&gt;
-                    </span>
-                  </h2>
-                  <p
-                    className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}
-                  >
-                    A medical treatment start-up that built for health tourism
-                    in Turkiye.
-                  </p>
-                </a>
-                <a
-                  id="xp-netsim"
-                  className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-                    Netsim Software Inc.{" "}
-                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                      -&gt;
-                    </span>
-                  </h2>
-                  <p
-                    className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}
-                  >
-                    A company that builts ERP products for desktop.
-                  </p>
-                </a>
-                <a
-                  id="xp-rasp"
-                  className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-                    Raspberrify{" "}
-                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                      -&gt;
-                    </span>
-                  </h2>
-                  <p
-                    className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}
-                  >
-                    A startup-driven web development company, catering to
-                    startups through freelance projects.
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-20 col-span-3  text-center text-white">
-            <h2 className="font-bold">Co-founder and Product Manager 
-              <span className="text-xl font-semibold font-mono">
-              {" "}@Medicurism
-                </span>
-            </h2>
-            <p className="mt-2 px-10">
-              
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam suscipit velit, ut magnam repudiandae fugit voluptate tempora aspernatur! Unde quia culpa repudiandae, recusandae vitae minus debitis, ratione suscipit nesciunt dignissimos ea placeat earum cumque maxime perspiciatis rem? Tempore, placeat quia?
-            </p>
-                        
-          </div>
-        </div>
+        <ExperiencePage />
+      
 
 
         {/*The linking to my projects I have done so far*/}
-
-        <h2
-          className={"mt-20 mb-3 text-center text-2xl font-semibold text-white"}
-        >
-          Start-ups:
-        </h2>
-        <div className="mt-5 mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left text-white">
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-              Medicurism{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}>
-              A medical treatment website and app built for health tourism in
-              Turkiye.
-            </p>
-          </a>
-
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-              Kario{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}>
-              Curious people's dating application
-            </p>
-          </a>
-
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-              Raspberrify{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}>
-              A startup-driven web development company, catering to startups
-              through freelance projects.
-            </p>
-          </a>
-
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold"}>
-              Factory Fuse{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50"}>
-              Time management gantt chart application runs in your browser.
-            </p>
-          </a>
-
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold"}>
-              Grinder{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50"}>
-              Instantly manipulate your photos with our mobile-app.
-            </p>
-          </a>
-
-          <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={"mb-3 text-2xl font-semibold text-white"}>
-              Go-App{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={"m-0 max-w-[30ch] text-sm opacity-50 text-white"}>
-              Payment Gateway Solution for an extra-ordinary payment experience
-              for remarkable moments.
-            </p>
-          </a>
-        </div>
+          <Projects />
 
         <div className="mt-20">
           <h1 className="font-InterRegular uppercase tracking-tighter  bg-gradient-to-b from-[#e0dfdf]  to-black  text-transparent bg-clip-text text-center  ">

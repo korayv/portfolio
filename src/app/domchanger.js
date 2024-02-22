@@ -1,27 +1,23 @@
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to dynamically create and show xp notification
-    function showxp(type, message) {
-        const xpContainer = document.querySelector('.xp-container');
-        
-        // Create a new div for the xp message
-                const xpDiv = document.createElement('div');
-                xpDiv.innerHTML = `${message}`;
-                
-                // Append the new xp div to the container
-                xpContainer.appendChild(xpDiv);
-            
-            document.getElementById("xp-medicurism").addEventListener("click", function () {
-                showxp("DOM medicurism has been clicked.");
-            });
 
-            document.getElementById("xp-netsim").addEventListener("click", function () {
-                showxp("DOM netsim has been clicked.");
-            });
-            
-            document.getElementById("xp-rasp").addEventListener("click", function () {
-                showxp("DOM rasp has been clicked.");
-            });
-            
-        });
-    </script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to dynamically change the content of the xp-container
+    function degistir(message) {
+        const xpContainer = document.getElementById('bunu-deistir');
+        xpContainer.innerHTML = `<p>Yeni içerik buraya gelecek. Mesaj: ${message}</p>`;
+    }
+
+    // XP Medicurism'a tıklanınca
+    document.getElementById('xp-medicurism').addEventListener('click', function () {
+        degistir("XP Medicurism'a tıklandı.");
+    });
+
+    // XP Netsim'e tıklanınca
+    document.getElementById('xp-netsim').addEventListener('click', function () {
+        degistir("XP Netsim'e tıklandı.");
+    });
+
+    // XP Raspberrify'e tıklanınca
+    document.getElementById('xp-rasp').addEventListener('click', function () {
+        degistir("XP Raspberrify'e tıklandı.");
+    });
+});

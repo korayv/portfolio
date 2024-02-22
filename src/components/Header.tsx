@@ -50,49 +50,49 @@ export const Navbar = () => {
             <ProductItem
               title="Medicurism"
               href="/medicurism"
-              src="/images/me.png"
+              src="/me.png"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="Kario"
               href="/kario"
-              src="me.png"
+              src="/"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Raspberrify"
               href="/raspberrify"
-              src="images/me.png"
+              src="/me.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Fabrikator"
               href="fabrikator.io"
-              src="/images/me.png"
+              src="/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="FactoryFuse"
               href="/ffuse"
-              src="images/me.png"
+              src="/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Go-Project"
               href="/gift-project"
-              src="/images/me.png"
+              src="/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Grinder App"
               href="https://github.com/korayv/grinder"
-              src="images/me.png"
+              src="/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Medicurism App"
               href="/medicurism-app"
-              src="images/me.png"
+              src="/me.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
