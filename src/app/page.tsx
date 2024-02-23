@@ -7,6 +7,8 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import ExperiencePage from './experiencePage';
 import Projects from './projects';
+import Contact from './contact';
+import Photo from './photoShow';
 
 import Footer from "@/components/Footer";
 import {
@@ -160,32 +162,11 @@ export default function Home() {
         {/*The linking to my projects I have done so far*/}
           <Projects />
 
-        <div className="mt-20">
-          <h1 className="font-InterRegular uppercase tracking-tighter  bg-gradient-to-b from-[#e0dfdf]  to-black  text-transparent bg-clip-text text-center  ">
-            Trusted by the best front end teams
-          </h1>
-        </div>
 
-        <div className="max-w-4xl mx-auto flex flex-col items-center mt-5 gap-y-10">
-          <div className="flex gap-x-20">
-            <Image
-              className="me-coffee"
-              alt="I am a coffee lover"
-              src={mecoffee}
-            />
-            <h2 className="mb-3 text-2xl font-semibold text-white">
-              I love coffee
-            </h2>
-          </div>
-          <div className="flex gap-x-20"></div>
-        </div>
-
-        {/* <Link href="/posts">
-        <div className="py-2 px-8 mt-14 text-lg w-fit transition-colors duration-200 text-white bg-slate-800 border rounded-full shadow-md border-[#D1D5DA] hover:bg-slate-700 flex items-center">
-        Go to Blogs <BsArrowRightShort className="text-3xl ml-1" />
-        </div>
-      </Link> */}
-        {/* <Footer /> */}
+        {/*Photo show*/}
+          <Photo />
+        {/*Contact*/}
+          <Contact />
       </div>
     </main>
   );
